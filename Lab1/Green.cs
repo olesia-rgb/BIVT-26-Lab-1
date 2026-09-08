@@ -1,4 +1,6 @@
-﻿namespace Lab1
+using System.Security.Cryptography;
+
+namespace Lab1
 {
     public class Green
     {
@@ -8,6 +10,15 @@
 
             // code here
 
+            if (Math.Abs(d) >= 1.0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+                    
             // end
 
             return answer;
@@ -17,16 +28,24 @@
             bool answer = false;
 
             // code here
+            double sr = (d + f) / 2;
+            if (sr>0) {
+                answer = true;
+            }
+            else { answer = false; }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task3(int a, int b)
         {
             bool answer = false;
 
             // code here
+            int a1 = Math.Abs(a);
+            int b1 = Math.Abs(b);
+            int summ = a + b;
+            int summ1 = a1 + b1;
 
             // end
 
