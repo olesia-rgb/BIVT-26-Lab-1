@@ -45,11 +45,12 @@ namespace Lab1
             int a1 = Math.Abs(a);
             int b1 = Math.Abs(b);
             int summ = a + b;
-            int summ1 = a1 + b1;
+            int summ1 = (a1 + b1)/2;
+            if (summ > summ1) { answer = true; }
+            else { answer = false; }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public int Task4(int a, int b, int c)
         {
