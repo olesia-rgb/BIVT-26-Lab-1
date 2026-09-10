@@ -55,30 +55,34 @@ namespace Lab1
         public int Task4(int a, int b, int c)
         {
             int answer = 0;
-
-            // code here
-
-            // end
+            if (a > b)
+            {
+                answer = a;}
+            else { answer = b; }
 
             return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
-
-            // code here
-
-            // end
-
+            if (Math.Abs(x) > 1.0)
+            {
+                answer = 0;}
+            else { double x1 = Math.Pow(x,2);
+                answer = x1 - 1;
+            }
             return answer;
         }
         public bool Task6(double x, double y)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            if (y > 0.0 && y <= 1.0 && Math.Abs(x) <= 1.0 && y <= 1 - Math.Abs(x))
+            {
+                answer = true;}
+            else
+            {
+                answer = false;
+            }
 
             return answer;
         }
@@ -87,9 +91,13 @@ namespace Lab1
         {
             bool answer = true;
 
-            // code here
-
-            // end
+            if (n <0) { answer = false; }
+            else {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            } 
 
             return answer;
         }
